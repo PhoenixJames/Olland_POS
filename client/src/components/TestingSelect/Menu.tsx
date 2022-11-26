@@ -11,17 +11,18 @@ interface MenuProps {
 export const Menu = ({menu,setMenu,handleMenuSelectChange}:MenuProps) => {
  
  return(
-  <Box width='250px'>
    <TextField 
    label="Select Menu" 
    select value={menu} 
+   size='small'
+   placeholder='Select Menu'
    onChange={handleMenuSelectChange}
    fullWidth
+   required
    >
     <MenuItem value="m1">menu1</MenuItem>
     <MenuItem value="m2">menu2</MenuItem>
     <MenuItem value="m3">menu3</MenuItem>
    </TextField>
-  </Box>
  )
 }

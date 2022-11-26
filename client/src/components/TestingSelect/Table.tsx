@@ -11,17 +11,18 @@ interface TableProps {
 export const Table = ({table,setTable,handleTableSelectChange}:TableProps) => {
  
  return(
-  <Box width='250px'>
    <TextField 
    label="Select Table" 
+   placeholder='Select Table'
+   size='small'
    select value={table} 
    onChange={handleTableSelectChange}
    fullWidth
+   required
    >
     <MenuItem value="t1">Table1</MenuItem>
     <MenuItem value="t2">Table2</MenuItem>
     <MenuItem value="t3">Table3</MenuItem>
    </TextField>
-  </Box>
  )
 }
