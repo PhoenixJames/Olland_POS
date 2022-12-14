@@ -52,6 +52,11 @@ export const AllSelect = () => {
         <Grid item xs={12} sm={12}>
         <Category category={category} setCategory={setCategory} handleCategorySelectChange={handleCategorySelectChange}/>
         </Grid>
+        <Grid item xs={12} sm={6}>
+         <Button>-</Button>
+         <Box>0</Box>
+         <Button>+</Button>
+        </Grid>
         <Grid item xs={12} sm={12}>
         <Button fullWidth variant="outlined" onClick={handleSave}>Save</Button>
         </Grid>
